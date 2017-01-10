@@ -1,0 +1,8 @@
+
+//to connect by beeline in vm
+beeline -u "jdbc:hive2://quicktart.cloudera:10000/default" 
+
+
+// run a hql file in beeline
+beeline -u "jdbc:hive2://master01:2181,master02:2181,master03:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2"
+      -f file.hql --hivevar HDFSDIR=/tmp/folder
