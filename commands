@@ -1,7 +1,8 @@
 
 //to connect by beeline in vm
 beeline -u "jdbc:hive2://quicktart.cloudera:10000/default" 
-
+//nueva forma de conectarse
+beeline -u jdbc:hive2://quickstart.cloudera:10000/default -n admin -d org.apache.hive.jdbc.HiveDriver
 
 // run a hql file in beeline
 beeline -u "jdbc:hive2://master01:2181,master02:2181,master03:2181/;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2"
